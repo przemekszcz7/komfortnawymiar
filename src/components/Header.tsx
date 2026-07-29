@@ -66,8 +66,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenContact }) => {
       <nav 
         className={`transition-all duration-300 ${
           isScrolled 
-            ? 'bg-neutral-950/95 backdrop-blur-md py-3 shadow-2xl border-b border-amber-500/20' 
-            : 'bg-gradient-to-b from-neutral-950/90 via-neutral-950/60 to-transparent py-5'
+            ? 'bg-neutral-950/98 py-3 shadow-2xl border-b border-amber-500/20' 
+            : 'bg-gradient-to-b from-neutral-950/95 via-neutral-950/80 to-transparent py-5'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
@@ -135,7 +135,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenContact }) => {
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-neutral-950/98 border-b border-amber-500/30 backdrop-blur-xl px-6 py-6 space-y-5 animate-in slide-in-from-top duration-300">
+        <div className="md:hidden bg-neutral-950 border-b border-amber-500/30 px-6 py-6 space-y-5 animate-in slide-in-from-top duration-300">
           <div className="flex flex-col space-y-4 pt-2">
             <a
               href="#oferta"
